@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  
+  <title>APSISLINKS RAILWAY & METRO</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/train (1).png" rel="icon">
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+   <!-- EmailJS Integration Script -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <!-- EmailJS Integration Script -->
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      emailjs.init("5zcgep05Bo0WNwYBe"); // Your public key
+    
+      // Function to send the form email
+      window.sendEmail = function (event) {
+        event.preventDefault(); // Prevent default form submission
+        document.querySelector('.loading').style.display = 'block'; // Show loading spinner
+
+        emailjs.sendForm('service_o3bnwlg', 'template_1v7zs6h', document.getElementById('contactForm'))
+          .then(function (response) {
+            console.log('SUCCESS!', response.status, response.text);
+            document.querySelector('.loading').style.display = 'none'; // Hide loading spinner
+            document.querySelector('.sent-message').style.display = 'block'; // Show success message
+            document.querySelector('.error-message').style.display = 'none'; // Hide error message
+            document.getElementById('contactForm').reset(); // Reset the form
+          }, function (error) {
+            console.error('FAILED...', error);
+            document.querySelector('.loading').style.display = 'none'; // Hide loading spinner
+            document.querySelector('.sent-message').style.display = 'none'; // Hide success message
+            document.querySelector('.error-message').style.display = 'block'; // Show error message
+          });
+      };
+    });
+  </script>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="peak-power-pv.html" class="logo"><img src="assets/img/train (1).png" alt="" class="img-fluid"></a>
+
+      <h1 class="logo"><a href="index.html">APSISLINKS</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+          <li class="dropdown"><a href="index.html#OurProducts"><span> Our Product</span> <i
+            class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="Rolling Stock.html">Rolling Stock</a></li>
+              <li><a href="Railway Electrific.html">Railway Electrification</a></li>
+              <li><a href="Signal&Telecom.html">Signal &Telicommunication</a></li>
+              <li><a href="Traction and Coaching.html">Traction and Coaching</a></li>
+              <li><a href="Project managemnt con.html">Project Management Consultancy</a></li>
+            </ul>
+      </li>
+          <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
+          <li><a class="nav-link scrollto " href="career.html">Career</a></li>
+          <li><a class="getstarted scrollto" href="Contact.html">Contact Us</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+          <section class="services-section">
+            <h2 class="services-heading" style="margin-top: 70px;">CONTACT US</h2>
+            <hr>
+          </section>
+  
+          <div class="row contact-info">
+            <div class="col-md-4">
+              <div class="contact-address">
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.146223218986!2d73.871845!3d18.5289181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c163096ff879%3A0x3ff25e4fa8e8f233!2sPune%20Railway%20Station!5e0!3m2!1sen!2sin!4v1697372991490!5m2!1sen!2sin"
+                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+              </iframe>
+                          </div>
+                        </div>
+              
+                        <div class="col-md-4">
+                          <div class="contact-phone">
+                            <i class="bi bi-phone"></i>
+                            <h3>Phone Number</h3>
+                            <p><a href="+91 701 960 8479">+91 701 960 8479</a></p>
+                          </div>
+                        </div>
+              
+                        <div class="col-md-4">
+                          <div class="contact-email">
+                            <i class="bi bi-envelope"></i>
+                            <h3>Email</h3>
+                            <p><a href="mailto:info@example.com">info@apssislinks.com</a></p>
+                          </div>
+                        </div>
+                      </div>
+  
+          <!-- Contact Form -->
+          <div class="form">
+            <form id="contactForm" role="form" class="php-email-form" method="POST" onsubmit="sendEmail(event)">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <div class="error" id="nameError" style="color: red;"></div>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  <div class="error" id="emailError" style="color: red;"></div>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                <div class="error" id="subjectError" style="color: red;"></div>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" id="message" placeholder="Message"
+                  required></textarea>
+                <div class="error" id="messageError" style="color: red;"></div>
+              </div>
+              <div class="my-3">
+                <div class="loading" style="display:none;">Loading...</div>
+                <div class="sent-message" style="color: green; display:none;">Your message has been
+                  sent successfully !</div>
+                <!-- <div class="error-message" style="color: red; display:none;">Failed to send the message.
+                                    Please try again later.</div> -->
+              </div>
+              <div class="text-center"><button type="submit" style="margin-bottom: 60px;">Send Message</button></div>
+            </form>
+          </div>
+  
+      </section>
+  
+  
+    </main><!-- End #main -->
+
+</main>
+
+ <!-- ======= Footer ======= -->
+ <footer id="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-info">
+            <h3>Fisen R&D</h3>
+            <h5>Address</h5>
+            <p>
+              APSISLINKS METRO DIVISION <br>
+              BLOC NO 03.4 108,<br>
+              SITE OFFICE AT JUMERA BESITE,<br>
+              BUQADUJA DUBAI,UAE.<br>
+              <br>
+              Danny Mehta Industrial Area <br>
+              Kondhwa BK,Pune Maharashtra<br>
+              411048 .<br>
+              <br>
+              
+            <h5>Contact Us</h5>
+            <strong>Phone:</strong> +91 701 960 8479<br>
+            <strong>Phone:</strong> +971 55 438 5756.<br>
+            <strong>Email:</strong> info@apsislinks.com<br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Links</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="index.html#about">About us</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="index.html#services">Services</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="privacypolicy.html">Privacy Policy</a></li>
+            <li><i class="bx bx-chevron-right"></i><a href="Termsandservices.html">Terms and Service</a>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="index.html#services">Rolling Stock</a>
+            </li>
+            <li><i class="bx bx-chevron-right"></i> <a href="index.html#services">Steel Foundry</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="index.html#services">Bridges&Structures</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="index.html#services">Hydro Mechanical Equipment</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="index.html#services">Traction Coaching</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="index.html#services">Internship</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="index.html#services">Rail EPC</a></li>
+          </ul>
+        </div>
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+          <div class="social-links mt-3">
+            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="copyright">
+      &copy; Copyright <strong><span>FISEN R&D</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- Designed by ...</a> -->
+    </div>
+  </div>
+</footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
